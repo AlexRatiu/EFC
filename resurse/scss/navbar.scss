@@ -1,0 +1,89 @@
+$color_1: black;
+$color_2: white;
+$background-color_1: var(--culoare-meniu);
+$background-color_2: black;
+
+/*# sourceMappingURL=navbar.css.map */
+#hamburger {
+	display: none;
+}
+#ch-menu {
+	display: none;
+}
+body {
+	--inaltime-meniu: 55px;
+	--latime-buton: 16.086vw;
+	--culoare-meniu: var(--culoare-fundal-inchis);
+	--culoare-border-buton: black;
+}
+.navbar {
+	--culoare-text-meniu: black;
+	background-color: $background-color_1;
+	width: 98vw;
+	height: var(--inaltime-meniu);
+	padding-bottom: 5%;
+	a {
+		color: $color_1;
+		text-decoration: none;
+	}
+}
+ul.meniu {
+	display: block;
+	padding: 0;
+	margin: 0;
+	ul {
+		background-color: $background-color_2;
+		overflow: visible;
+		text-align: center;
+		translate: -27.6em;
+		margin-top: 0.6em;
+		opacity: 0;
+		transition: all 0.3s ease-in;
+		transform: scale(1, 0);
+		transform-origin: top;
+		&:hover {
+			background-color: $background-color_2;
+			overflow: visible;
+			text-align: center;
+		}
+	}
+	li {
+		&:hover {
+			ul {
+				opacity: 1;
+				transform: scale(1, 1);
+			}
+			width: var(--latime-buton);
+			height: var(--inaltime-meniu);
+			display: block;
+			-webkit-box-shadow: inset 0 0 15px white;
+			-moz-box-shadow: inset 0 0 15px white;
+			box-shadow: inset 0 0 15px white;
+			transition: ease-in 700ms;
+			overflow: visible;
+		}
+		width: var(--latime-buton);
+		height: var(--inaltime-meniu);
+		background-color: $background-color_2;
+		overflow: hidden;
+		text-align: center;
+		div {
+			display: block;
+			width: 100%;
+			height: 100%;
+			line-height: var(--inaltime-meniu);
+			color: $color_2;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			line-height: var(--inaltime-meniu);
+			color: $color_2;
+			text-decoration: none;
+			font-weight: bold;
+		}
+	}
+}

@@ -1,0 +1,262 @@
+:root {
+  --principal: #0027F5;
+  --secundar1: #200BDE;
+  --secundar2: #650DFA;
+  --secundar3: #0B66DE;
+  --secundar4: #0DB1FA;
+}
+
+#iframe {
+  display: flexbox;
+}
+#iframe a {
+  color: white;
+  font-size: 1.5rem;
+  background-color: grey;
+}
+#iframe a:hover {
+  background-color: var(--secundar2);
+  transition: ease-in 500ms;
+  transform-origin: center;
+}
+
+html {
+  background-color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-size: 1vw;
+}
+
+strong {
+  font-size: 1vw;
+}
+
+table {
+  --c1: #0027F5;
+  --c2: #0DB1FA;
+  border: 5px inset var(--secundar2);
+  border-collapse: collapse;
+  width: 100%;
+  height: 30%;
+}
+
+tr:nth-child(even) td {
+  border: 5px inset var(--c1);
+  border-bottom: 3px solid var(--c1);
+}
+tr:nth-child(odd) td {
+  border: 5px inset var(--c2);
+  border-bottom: 3px solid var(--c2);
+}
+tr:hover {
+  outline: 7px solid white;
+  transition: outline 1s ease;
+}
+
+.navbar li {
+  float: left;
+  padding: 0.7%;
+}
+
+.rand {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "prezentare prezentare prezentare prezentare" "diverse tabel tabel anunturi" "grid-galerie grid-galerie grid-galerie grid-galerie" "despre despre utilizatori_on dateutilizator";
+}
+
+.prezentare {
+  grid-area: prezentare;
+  border: 3px solid black;
+  margin: 2em;
+}
+
+.grid-galerie {
+  grid-area: grid-galerie;
+  border: 3px solid black;
+  margin: 2em;
+}
+
+.anunturi {
+  grid-area: anunturi;
+  border: 3px solid black;
+  margin: 2em;
+}
+
+.tabel {
+  grid-area: tabel;
+  border: 3px solid black;
+  margin: 2em;
+}
+
+.diverse {
+  grid-area: diverse;
+  border: 3px solid black;
+  margin: 2em;
+}
+
+.despre {
+  grid-area: despre;
+  border: 3px solid black;
+  margin: 2em;
+}
+
+.dateutilizator {
+  grid-area: dateutilizator;
+  border: 3px solid black;
+  margin: 2em;
+}
+
+.utilizatori_on {
+  grid-area: utilizatori_on;
+  border: 3px solid black;
+  margin: 2em;
+}
+
+#link-top {
+  position: fixed;
+  bottom: 2em;
+  opacity: 0.5;
+  right: 1.2em;
+  width: 3rem;
+  box-sizing: border-box;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border: 1px solid grey;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: rgb(220, 220, 220);
+  box-shadow: 1px 1px 1px 0.2em black;
+}
+#link-top:hover #triunghi:hover {
+  opacity: 1;
+  border-bottom: 1.5rem solid var(--principal);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  transition: ease-in 400ms;
+  transform: scale(1.2, 1.2);
+}
+
+#triunghi {
+  height: 0px;
+  width: 0;
+  opacity: 0.5;
+  display: inline-block;
+  border-bottom: 1.5rem solid grey;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  vertical-align: middle;
+  transform: translateY(15%);
+  transform: scale(0.8, 0.8);
+}
+
+[data-tooltip] {
+  position: relative;
+}
+[data-tooltip]:before {
+  content: attr(data-tooltip);
+  display: none;
+  position: absolute;
+  bottom: 10%;
+  left: -10%;
+  transform: translateX(-50%);
+  transform: translateY(115%);
+  padding: 1px 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 15px;
+  white-space: nowrap;
+}
+[data-tooltip]:hover:before {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .rand {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "prezentare" "calendar" "tabel" "anunturi" "diverse" "despre" "utilizatori_on" "dateutilizator";
+  }
+  p {
+    font-size: 5vw;
+  }
+  strong {
+    font-size: 5vw;
+  }
+}
+@media print {
+  #banner {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border: 2px dotted black;
+    padding: 10px;
+    text-align: center;
+  }
+  img {
+    display: none !important;
+  }
+  video {
+    display: none !important;
+  }
+  iframe {
+    display: none !important;
+  }
+  .container-iframe {
+    display: none !important;
+  }
+  [href="#top"] {
+    display: none !important;
+  }
+  [href="#"] {
+    display: none !important;
+  }
+  [role=banner] {
+    display: none !important;
+  }
+  [role=navigation] {
+    display: none !important;
+  }
+  .container {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+    text-decoration: underline;
+    page-break-after: always;
+  }
+  nav {
+    display: none;
+  }
+  body::after {
+    content: "Ratiu Alexandru";
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 2cm;
+    border: 4px double black;
+    opacity: 0.65;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 0.7cm;
+  }
+  @page {
+    margin-left: 2.5cm;
+    margin-right: 0.5cm;
+    :right {
+      margin-left: 0.5cm;
+      margin-right: 2.5cm;
+    }
+  }
+  footer {
+    page-break-before: always;
+  }
+}

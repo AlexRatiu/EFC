@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <%- include("../fragmente/head.ejs") %>
+    <body>
+        <%- include("../fragmente/header.ejs") %>
+        <main>
+            <div class="galerie_animata" id="galanim" style="--nrImg: <% locals.nrImagini %>">
+
+                <% var i=0; %>
+                    <% for (let imag of locals.imgInv) { %>
+                        <% i=i + 1; %>
+                            <% if(i> locals.nrImagini) { break; }%>
+    
+                                <% var nume_imag=imag.fisier.split('\\'); %>
+                                    <% nume_imag=nume_imag[nume_imag.length - 1]; %>
+    
+                                        <figure>
+                                            <picture>
+                                                <source srcset="<%- imag.fisier_mic %>" media="(max-width:700px)" />
+                                                <source srcset="<%- imag.fisier_mediu %>"
+                                                    media="(max-width:1400px)" />
+                                                <img src="<%- imag.fisier %>" alt=" <%- imag.alt || nume_imag %> ">
+                                            </picture>
+                                            <figcaption><%- imag.attribution || imag.descriere %></figcaption>
+                                        </figure>
+    
+                                        <% } %>
+            </div>
+            <br>
+            <div>
+                <br>
+            </div>     
+        </main>
+        <%- include("../fragmente/footer.ejs") %>
+    </body>
+</html>

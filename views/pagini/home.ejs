@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <%- include("../fragmente/head.ejs") %>
+    <body>
+
+        <%- include("../fragmente/header.ejs") %>
+        
+        <main class="rand">
+                <div class="prezentare">
+                    <figure>
+                        <picture>
+                            <source srcset="/imagini/logo_mare.jpg" media="(min-width:901px)">
+                            <source srcset="/imagini/logo_mediu.jpg" media="(max-width:900px)">
+                            <source srcset="/imagini/logo_mic.jpg" media="(max-width:400px)">
+                            <img src="/imagini/logo_mare.jpg" alt="Logo">
+                        </picture>
+                        <figcaption>Logo EFC</figcaption>
+                    </figure>
+                    
+                    <p><q>Boxul e singurul sport in care creierul iti este zdruncinat, banii iti sunt luati, iar numele iti apare la rubrica morti</q> - Joe Frazier</p>
+                </div>
+                
+                <div class="grid-galerie">
+                    <%- include("../fragmente/galerie_statica.ejs") %>
+                </div>
+
+                <div class="tabel">
+                    <table>
+                        <thead>
+                            <td><b>Tip Bilet</b></td>
+                            <td><b>Pret</b></td>
+                            <td><b>Extra</b></td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bilet Online</td>
+                                <td>70 RON</td>
+                                <td>Nu</td>
+                            </tr>
+                            <tr>
+                                <td>Bilet Live</td>
+                                <td>550 RON</td>
+                                <td>Prima bautura gratis</td>
+                            </tr>
+                            <tr>
+                                <td>Bilet Live Premium</td>
+                                <td>2500 RON</td>
+                                <td>Bautura si mancare incluse</td>
+                            </tr>
+                            <tr>
+                                <td>VIP</td>
+                                <td>5500 RON</td>
+                                <td>Experienta completa plus acces backstage</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4"><small>Biletele nu se pot returna.</small></td>
+                            </tr>
+                        </tfoot>
+                        <caption><b>Bilete EFC53</b></caption>
+                    </table>
+                </div>  
+                <div class="anunturi">
+                    <section id="evenimente">
+                        <h2>Evenimente</h2>
+                        <p>Pe pagina noastră "Evenimente" veți găsi informații despre evenimentele viitoare și arhiva evenimentelor trecute. Vă invităm să verificați adesea această pagină pentru a afla ce <b>evenimente</b> <b>MMA</b> urmează să aibă loc.</p>
+                        <section id="evenimente_viitore">
+                            <h3>Evenimente viitoare</h3>
+                        </section>
+                        <section id="arhiva_evenimente">
+                            <h3>Arhiva evenimente</h3>
+                            <p>În secțiunea "Arhiva evenimentelor" puteți accesa informații despre evenimentele <b>MMA</b> anterioare, inclusiv rezultatele și statisticile luptătorilor. Vă invităm să explorați această secțiune pentru a vă reaminti de cele mai importante momente din istoria noastră.</p>
+                            <div id="iframe">
+                                <iframe width="350" height="150" name="Iframe1" src="https://www.youtube.com/embed/KA2ZR10d75A" title="Clip EFC 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <a href="https://www.youtube.com/embed/KA2ZR10d75A" target="Iframe1">Vid 1</a>
+                                <a href="https://www.youtube.com/embed/-6K3gUBOkPE" target="Iframe1">Vid 2</a>
+                                <a href="https://www.youtube.com/embed/gSZ44PXYGIc" target="Iframe1">Vid 3</a>
+                            </div>
+                        </section>
+                     </section>
+                </div>
+                <div class="diverse">
+                    <section id="stiri">
+                        <h2>Stiri si articole</h2>
+                        <p>Pagina noastră "Știri și articole" vă va ține la curent cu cele mai recente <b>evenimente</b> și știri din lumea <b>MMA</b>. Vă puteți aștepta să găsiți cele mai recente știri despre evenimentele noastre, precum și articole interesante despre luptători și aspectele diferite ale <b>MMA</b>.</p>
+                        <section id="ultimele_stiri">
+                            <h3>Ultimele stiri</h3>
+                        </section>
+                        <section id="articole">
+                            <h3>Articole despre evenimente și luptători</h3>
+                        </section>
+                    </section>
+                </div>
+                <div class="despre">
+                    <section id="bilete_abonamente">
+                        <h2>Bilete si Abonamente</h2>
+                        <p>Pentru a cumpăra bilete la evenimentele noastre, vă rugăm să verificați secțiunea "Bilete" de pe site-ul nostru. De asemenea, oferim abonamente live stream pentru cei care doresc să urmărească evenimentele noastre în direct, în confortul casei lor.</p>
+                        <section id="bilete">
+                            <h3>Cumpara bilete</h3>
+                        </section>
+                        <section id="abonamente">
+                            <h3>Abonamente live</h3>
+                            <p>În secțiunea "Abonamente live stream" puteți achiziționa abonamente pentru a urmări evenimentele noastre în direct, prin intermediul live stream-ului. Acesta este o opțiune excelentă pentru cei care doresc să vadă evenimentele noastre de <b>MMA</b>, dar nu pot fi prezenți fizic la eveniment.</p>
+                        </section>
+                    </section>
+                </div>
+                <div class="dateutilizator">
+                    <section id="despre_noi">
+                        <h2>Despre noi</h2>
+                        <p>Pe pagina noastră "Despre noi" veți găsi informații despre compania noastră și echipa noastră dedicată organizării evenimentelor <b>MMA</b> de top. Suntem mândri să oferim o experiență de <b>MMA</b> de calitate și vă mulțumim pentru susținerea voastră.</p>
+                        <section id="companie">
+                            <h3>Informatii despre EFC</h3>
+                        </section>
+                        <section id="termeni">
+                            <h3>Termeni si Conditii</h3>
+                        </section>
+                    </section>
+                </div>
+                <div class="utilizatori_on">
+                    <section id="intrebari_frecvente">
+                        <h2>Intrebari Frecvante</h2>
+                        <details>
+                            <summary>Cum pot sa achizitionez bilete?</summary>
+                            <p>De pe pagina de bilete se pot achizitiona ata bilete, cat si abonamente live.</p>
+                        </details>
+                        <details>
+                            <summary>Pot sa renunt la bilet?</summary>
+                            <p>Nu, dar se poate schimba pentru un bilet la alt eveniment.</p>
+                        </details>
+                        <details>
+                            <summary>Pot sa anulez un abonament?</summary>
+                            <p>Da, plata recursiva se va opri incepand cu luna urmatoare.</p>
+                        </details>
+                    </section>
+                </div>
+                <div id="text">
+                    "un text basic"
+                    <div id="text-reflectat">
+                        "un text basic"
+                    </div>
+                </div>
+                <a href="#" id="link-top" data-tooltip="Sus"><div id="triunghi"></div></a>
+        </main>
+        <%- include("../fragmente/footer.ejs") %>
+    </body>
+</html>

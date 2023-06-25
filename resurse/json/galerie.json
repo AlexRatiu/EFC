@@ -1,0 +1,49 @@
+{
+	"cale_galerie":"imagini/galerie",
+	"imagini": [
+		{
+			"fisier":"bataie1.jpg",
+			"descriere":"Bataie1",
+			"luni":["aprilie"],
+			"anotimp":["primavara"]
+
+		}
+		,
+		{
+			"fisier":"bataie2.jpg",
+			"descriere":"Bataie2",
+			"luni":["aprilie"],
+			"anotimp":["primavara"]
+
+		},
+		{
+			"fisier":"bataie3.jpg",
+			"descriere":"Bataie3",
+			"luni":["mai"],
+			"anotimp":["primavara"]
+
+		},
+		{
+			"fisier":"bataie4.jpg",
+			"descriere":"Bataie4",
+			"luni":["mai"],
+			"anotimp":["primavara"]
+
+		},
+		{
+			"fisier":"bataie5.jpg",
+			"descriere":"Bataie5",
+			"luni":["iunie"],
+			"anotimp":["vara"]
+
+		},
+		{
+			"fisier":"bataie6.jpg",
+			"descriere":"Bataie6",
+			"luni":["iunie"],
+			"anotimp":["vara"]
+
+		}
+		
+	]
+}

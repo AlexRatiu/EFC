@@ -1,0 +1,20 @@
+<div id="grid-galerie">
+    <% for (let imag of locals.imagini) { %>
+       
+            <figure>
+                <picture>
+                    <source srcset="<%- imag.fisier_mic %>" media="(max-width:500px)" />
+                    <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)" />
+                    <img src="<%- imag.fisier %>" alt="imagine">
+                </picture>
+                <figcaption><%- imag.descriere %></figcaption>
+            </figure>
+ 
+    <% }  %>
+    <div id = "gol"></div>
+    <div id = "gol2"></div>
+    <div id = "gol3"></div>
+    <div id = "gol4"></div>
+    <div id = "gol5"></div>
+    <div id = "gol6"></div>
+</div>

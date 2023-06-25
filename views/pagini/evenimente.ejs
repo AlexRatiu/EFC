@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <%- include("../fragmente/head.ejs") %>
+    <body>
+        
+            <%- include("../fragmente/header.ejs") %>
+      
+        
+        <main>
+            <h2>Evenimente</h2>
+                        <p>Pe pagina noastră "Evenimente" veți găsi informații despre evenimentele viitoare și arhiva evenimentelor trecute. Vă invităm să verificați adesea această pagină pentru a afla ce <b>evenimente</b> <b>MMA</b> urmează să aibă loc.</p>
+                        <section id="evenimente_viitore">
+                            <h3>Evenimente viitoare</h3>
+                            <div class="grid-galerie">
+                                <%- include("../fragmente/galerie_statica.ejs") %>
+                            </div>        
+                        </section>
+                        <section id="arhiva_evenimente">
+                            <h3>Arhiva evenimente</h3>
+                            <p>În secțiunea "Arhiva evenimentelor" puteți accesa informații despre evenimentele <b>MMA</b> anterioare, inclusiv rezultatele și statisticile luptătorilor. Vă invităm să explorați această secțiune pentru a vă reaminti de cele mai importante momente din istoria noastră.</p>
+                            <div id="iframe">
+                                <iframe width="350" height="150" name="Iframe1" src="https://www.youtube.com/embed/KA2ZR10d75A" title="Clip EFC 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <a href="https://www.youtube.com/embed/KA2ZR10d75A" target="Iframe1">Vid 1</a>
+                                <a href="https://www.youtube.com/embed/-6K3gUBOkPE" target="Iframe1">Vid 2</a>
+                                <a href="https://www.youtube.com/embed/gSZ44PXYGIc" target="Iframe1">Vid 3</a>
+                            </div>
+                        </section>
+        </main>
+        <%- include("../fragmente/footer.ejs") %>
+    </body>
+</html>
